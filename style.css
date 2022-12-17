@@ -1,0 +1,24 @@
+.transition {
+    transition: 1s;
+}
+
+#add-cells {
+    display: grid;
+    height: 375px;
+    width: 375px;
+}
+
+body {
+    background-color: #272F32;
+    color: #DAEAEF;
+}
+
+.f1, a {
+    color: #FF3D2E;
+    text-decoration: none;
+}
+
+.br-pill {
+    color: #9DBDC6;
+    border-color: #9DBDC6;
+}

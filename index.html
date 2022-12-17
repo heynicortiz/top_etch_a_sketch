@@ -5,34 +5,8 @@
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="https://nicortiz.com/images/fa/fontawesome-pro-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-    <script src="main.js" defer></script>
-
-    <style type="text/css">
-        .transition {
-            transition: 1s;
-        }
-
-        #add-rows {
-            display: grid;
-            height: 375px;
-            width: 375px;
-        }
-
-        body {
-            background-color: #272F32;
-            color: #DAEAEF;
-        }
-
-        .f1, a {
-            color: #FF3D2E;
-            text-decoration: none;
-        }
-
-        .br-pill {
-            color: #9DBDC6;
-            border-color: #9DBDC6;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body class="w-100 sans-serif">
 <h1 class="f1 tc ma2">Etch-a-Sketch</h1>
@@ -42,23 +16,28 @@
     <div class="tc center">
         <p style="width: 600px;" class="center">A throw-back to the simple times of drawing...no shaking here though,
             use the buttons below to clear the grid or toggle lines. You can also adjust the size of "pixels" for the
-            grid if you want more fine-tuned drawing. We're also high tech and let you adjust canvas size and change
+            grid if you want more fine-tuned drawing. We're also high-tech and let you adjust canvas size and change
             your drawing color. Enjoy!</p>
+
         <a id="clearGrid" class="f6 link grow br-pill ba ph3 pv2 mb2 dib black mh1">Clear Grid</a>
+
         <a id="toggleLines" class="f6 link grow br-pill ba ph3 pv2 mb2 dib black mh1">Toggle Lines</a>
+
         <input id="slider" class="db center" type="range" min="3" max="32" value="10">
+
         <span id="gridSize" class="db">10 x 10</span>
+
         <input type="color" id="colorPicker" name="cellColor" value="#DAEAEF" style="width: 50px; height: 50px;"
                class="br-50 mv2">
     </div>
 
-    <div id="add-rows" class="center shadow-5 ba relative">
-
+    <div id="add-cells" class="center shadow-5 ba relative">
+        <!--        cells to be filled in with JavaScript-->
     </div>
 </div>
 
 <footer class="cf bottom-0 relative pa2 w-100 tc grow">
-    <a href="https://github.com/heynicortiz/top_rock_paper_scissors"><i class="fab fa-github fa-2x"></i></a><br>
+    <a href="https://github.com/heynicortiz/top_etch_a_sketch"><i class="fab fa-github fa-2x"></i></a><br>
     <a href="https://nicortiz.com/"><span>Made by Nic Ortiz</span></a>
 </footer>
 </body>
