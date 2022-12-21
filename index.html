@@ -8,37 +8,39 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body class="w-100 sans-serif">
-<h1 class="f1 tc ma2">Etch-a-Sketch</h1>
+<body class="w-100 sans-serif vh-100 dt-l">
+<div class="dtc-l v-mid">
+    <h1 class="f1 tc ma2">Etch-a-Sketch</h1>
 
-<div id="main-container" class="center">
+    <div id="main-container" class="center">
 
-    <div class="tc center">
-        <p style="width: 600px;" class="center">A throw-back to the simple times of drawing...no shaking here though,
-            use the buttons below to clear the grid or toggle lines. You can also adjust the size of "pixels" for the
-            grid if you want more fine-tuned drawing. We're also high-tech and let you adjust canvas size and change
-            your drawing color. Enjoy!</p>
+        <div class="tc center">
+            <p style="width: 600px;" class="center">A throw-back to the simple times of drawing...no shaking here though,
+                use the buttons below to clear the grid or toggle lines. You can also adjust the size of "pixels" for the
+                grid if you want more fine-tuned drawing. We're also high-tech and let you adjust canvas size and change
+                your drawing color. Enjoy!</p>
 
-        <a id="clearGrid" class="f6 link grow br-pill ba ph3 pv2 mb2 dib black mh1">Clear Grid</a>
+            <a id="clearGrid" class="f6 link grow br-pill ba ph3 pv2 mb2 dib black mh1">Clear Grid</a>
 
-        <a id="toggleLines" class="f6 link grow br-pill ba ph3 pv2 mb2 dib black mh1">Toggle Lines</a>
+            <a id="toggleLines" class="f6 link grow br-pill ba ph3 pv2 mb2 dib black mh1">Toggle Lines</a>
 
-        <input id="slider" class="db center" type="range" min="3" max="32" value="10">
+            <input id="slider" class="db center" type="range" min="3" max="32" value="10">
 
-        <span id="gridSize" class="db">10 x 10</span>
+            <span id="gridSize" class="db">10 x 10</span>
 
-        <input type="color" id="colorPicker" name="cellColor" value="#DAEAEF" style="width: 50px; height: 50px;"
-               class="br-50 mv2">
+            <input type="color" id="colorPicker" name="cellColor" value="#DAEAEF" style="width: 50px; height: 50px;"
+                   class="br-50 mv2">
+        </div>
+
+        <div id="add-cells" class="center shadow-5 ba relative">
+            <!--        cells to be filled in with JavaScript-->
+        </div>
     </div>
 
-    <div id="add-cells" class="center shadow-5 ba relative">
-        <!--        cells to be filled in with JavaScript-->
-    </div>
+    <footer class="cf bottom-0 absolute-l relative pa2 w-100 tc">
+        <a href="https://github.com/heynicortiz/top_etch_a_sketch"><i class="fab fa-github fa-2x dib grow"></i></a><br>
+        <a href="https://nicortiz.com/"><span class="dib grow">Made by Nic Ortiz</span></a>
+    </footer>
 </div>
-
-<footer class="cf bottom-0 relative pa2 w-100 tc grow">
-    <a href="https://github.com/heynicortiz/top_etch_a_sketch"><i class="fab fa-github fa-2x"></i></a><br>
-    <a href="https://nicortiz.com/"><span>Made by Nic Ortiz</span></a>
-</footer>
 </body>
 </html>

@@ -1,4 +1,7 @@
 ## Etch-a-Sketch
+
+🎬 [See it in action](https://heynicortiz.github.io/top_etch_a_sketch/) 🎬 
+
 This is an Etch-a-Sketch style toy written in Javascript which allows users to "draw" on the canvas using their mouse.
 
 Users can adjust the number of "pixels" in the grid, toggle grid-lines, and choose colors to draw with.
